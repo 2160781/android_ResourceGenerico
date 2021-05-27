@@ -1,13 +1,11 @@
 package com.example.android_resource;
 
-import android.util.Log;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class DadosApp {
 
-    private List<Receita> listaReceitas;
+    private List<Plano> listaPlanos;
     private int posicao;
 
 
@@ -20,8 +18,8 @@ public class DadosApp {
 
 
 
-        listaReceitas = new ArrayList<>();
-        listaReceitas.add(new Receita(tarefaPosicao, MaxtarefaPosicao));
+        listaPlanos = new ArrayList<>();
+        listaPlanos.add(new Plano(tarefaPosicao, MaxtarefaPosicao));
 
 
 
@@ -31,11 +29,11 @@ public class DadosApp {
 
     public String getTextoPassoReceita() {
 
-        return listaReceitas.get(posicao - 1).getTexto();
+        return listaPlanos.get(posicao - 1).getTexto();
     }
 
     public void avancar() {
-        if (posicao < listaReceitas.size())
+        if (posicao < listaPlanos.size())
             posicao++;
 
     }
@@ -46,7 +44,7 @@ public class DadosApp {
     }
 
     public void marcarFeito() {
-        listaReceitas.get(posicao - 1).marcarFeito();
+        listaPlanos.get(posicao - 1).marcarFeito();
     }
 
 

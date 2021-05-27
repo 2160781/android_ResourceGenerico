@@ -15,8 +15,8 @@ public class activity_tarefas extends AppCompatActivity {
     boolean estadoBoton;
     Button boton;
     TextView cajadetexto;
-    Button finalizar;
-    boolean estadofinalizar;
+ //   Button finalizar;
+  //  boolean estadofinalizar;
 
 
     private DadosApp dadosApp;
@@ -35,8 +35,8 @@ public class activity_tarefas extends AppCompatActivity {
         setContentView(R.layout.activity_tarefas);
         estadoBoton=true;
         boton=findViewById(R.id.Button);
-        estadofinalizar = false;
-        finalizar = findViewById(R.id.finalizar);
+     //   estadofinalizar = false;
+     //   finalizar = findViewById(R.id.finalizar);
         cajadetexto= findViewById(R.id.textView);
         cajadetexto.setText(dadosApp.getTextoPassoReceita());
 
@@ -59,7 +59,7 @@ public class activity_tarefas extends AppCompatActivity {
                     cajadetexto.setText(dadosApp.getTextoPassoReceita());
 
                     estadoBoton= false;
-                    estadofinalizar = false;
+                    //estadofinalizar = false;
                     // else{
                     //         boton.setText("Adios");
                     //      cajadetexto.setText("Adios");
@@ -77,7 +77,7 @@ public class activity_tarefas extends AppCompatActivity {
                     //ver_imagen.setImageResource(R.drawable.estg_h_01);
 
                     estadoBoton= false;
-                    estadofinalizar = false;
+                //    estadofinalizar = false;
                     //  }else{
 
                     //    boton.setText("Hola");
@@ -89,7 +89,7 @@ public class activity_tarefas extends AppCompatActivity {
             case KeyEvent.KEYCODE_ENTER:
                 if (action == KeyEvent.ACTION_DOWN) {
                     estadoBoton= false;
-                    estadofinalizar = true;
+                  //  estadofinalizar = true;
 
                 }
             default:
