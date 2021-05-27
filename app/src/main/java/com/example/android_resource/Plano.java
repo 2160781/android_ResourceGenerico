@@ -24,9 +24,9 @@ public class Plano {
         posicao = 1;
         total_passos = listaPassos.size();
 
+        tarefaPosicao = 1;
 
-
-        for(int i = 1; i < total_passos; i++){
+        for(int i = tarefaPosicao; i < total_passos; i++){
             Log.d("Tarefa", String.valueOf(listaPassos.get(i)));
         }
 
