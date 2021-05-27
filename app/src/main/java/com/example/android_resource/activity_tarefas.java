@@ -15,8 +15,7 @@ public class activity_tarefas extends AppCompatActivity {
     boolean estadoBoton;
     Button boton;
     TextView cajadetexto;
- //   Button finalizar;
-  //  boolean estadofinalizar;
+
 
 
     private DadosApp dadosApp;
@@ -35,8 +34,7 @@ public class activity_tarefas extends AppCompatActivity {
         setContentView(R.layout.activity_tarefas);
         estadoBoton=true;
         boton=findViewById(R.id.Button);
-     //   estadofinalizar = false;
-     //   finalizar = findViewById(R.id.finalizar);
+
         cajadetexto= findViewById(R.id.textView);
         cajadetexto.setText(dadosApp.getTextoPassoReceita());
 
@@ -52,19 +50,11 @@ public class activity_tarefas extends AppCompatActivity {
                 if (action == KeyEvent.ACTION_DOWN) {
                     //TODO
 
-                    //   if (estadoBoton==true){
-                  //  ver_imagen.setImageResource(R.drawable.image);
-
                     dadosApp.avancar();
                     cajadetexto.setText(dadosApp.getTextoPassoReceita());
 
                     estadoBoton= false;
-                    //estadofinalizar = false;
-                    // else{
-                    //         boton.setText("Adios");
-                    //      cajadetexto.setText("Adios");
-                    //    estadoBoton= false;
-                    // }
+
 
                 }
                 return true;
