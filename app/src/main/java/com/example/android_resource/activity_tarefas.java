@@ -27,7 +27,7 @@ public class activity_tarefas extends AppCompatActivity {
 
 
 
-        dadosApp = new DadosApp(1,5);
+        dadosApp = new DadosApp();
 
         /* informação da receita */
         super.onCreate(savedInstanceState);

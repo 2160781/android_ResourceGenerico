@@ -10,17 +10,17 @@ public class DadosApp {
 
 
     // singleton
-    public DadosApp(int tarefaPosicao, int MaxtarefaPosicao) {
-
+    public DadosApp() {
+/*
 
         tarefaPosicao = 1;
         posicao = tarefaPosicao;
 
-
+*/
 
         listaPlanos = new ArrayList<>();
-        listaPlanos.add(new Plano(tarefaPosicao, MaxtarefaPosicao));
-
+        listaPlanos.add(new Plano());
+        posicao = 1;
 
 
 
